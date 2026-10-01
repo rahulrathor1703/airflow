@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="afBoxGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052cc" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="afBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052cc" />
+      <stop offset="60%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <filter id="logoGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0052cc" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Left Emblem Box Border -->
+  <path d="M 200 90 L 40 90 L 40 310 L 200 310" fill="none" stroke="url(#afBoxGrad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 200 90 L 200 170" fill="none" stroke="#e11d48" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Emblem Stylized 'a' and 'F' Tubing -->
+  <!-- 'a' loops -->
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="90" cy="180" rx="30" ry="42" />
+    <ellipse cx="90" cy="180" rx="16" ry="26" stroke="#ffffff" stroke-width="5" />
+    <path d="M 120 138 L 120 222 C 120 230 115 235 105 235 L 75 235" />
+    
+    <!-- 'F' horizontal bars and vertical spine -->
+    <path d="M 135 110 L 175 110 C 180 110 185 115 185 120 L 185 130 C 185 135 180 140 175 140 L 145 140" />
+    <path d="M 135 165 L 185 165 C 192 165 197 170 197 176 L 197 184 C 197 190 192 195 185 195 L 135 195" />
+    
+    <!-- Vertical Spine and Base Connector -->
+    <path d="M 135 100 L 135 260 C 135 275 145 285 150 285 L 150 300 C 150 306 142 312 135 312 C 128 312 120 306 120 300 L 120 285" />
+    <!-- Cross connector -->
+    <path d="M 50 200 L 195 200 C 200 200 205 205 205 210 L 205 215 C 205 220 200 225 195 225 L 50 225 C 45 225 40 220 40 215 L 40 210 C 40 205 45 200 50 200 Z" fill="#0b1528" stroke="#ffffff" stroke-width="5" />
+  </g>
+
+  <!-- Red AIR FLOW Sub-Pill under Emblem -->
+  <rect x="52" y="260" width="136" height="24" rx="4" fill="#e11d48" />
+  <text x="120" y="277" fill="#ffffff" font-family="'Inter', Arial, sans-serif" font-weight="900" font-size="14" letter-spacing="1.5" text-anchor="middle">AIR FLOW</text>
+
+  <!-- Right Typography: AIR FLOW in Royal Blue Serif -->
+  <g fill="#38bdf8" filter="url(#logoGlow)">
+    <text x="240" y="245" font-family="'Cinzel', 'Georgia', 'Times New Roman', serif" font-weight="900" font-size="142" letter-spacing="4">
+      <tspan fill="#38bdf8">AIR</tspan>
+      <tspan dx="25" fill="#0284c7">FLOW</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom Gradient Line -->
+  <rect x="40" y="325" width="880" height="10" rx="5" fill="url(#afBarGrad)" />
+</svg>

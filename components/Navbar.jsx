@@ -92,27 +92,12 @@ export function Navbar({
               onClick={(e) => { e.preventDefault(); onNavigateSection('hero'); }}
               className="flex items-center gap-3 group text-decoration-none"
             >
-              <div className="relative flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-600 via-sky-500 to-blue-600 p-0.5 shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all">
-                <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                  <Wind className="w-6 h-6 text-cyan-400 group-hover:rotate-45 transition-transform duration-500" />
-                </div>
-                <span className="absolute -top-1 -right-1 flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1.5">
-                  <span className="font-heading font-black text-2xl tracking-tight text-white group-hover:text-cyan-400 transition-colors">
-                    AIR<span className="text-cyan-400">FLOW</span>
-                  </span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-cyan-950 text-cyan-400 px-1.5 py-0.5 rounded border border-cyan-800/50">
-                    PVT LTD
-                  </span>
-                </div>
-                <span className="text-[10.5px] tracking-wide text-slate-400 font-medium -mt-1 hidden sm:block">
-                  Aerodynamics & Ventilation Systems
-                </span>
+              <div className="flex items-center bg-white/95 hover:bg-white px-3 py-1.5 rounded-xl border border-slate-700 shadow-md shadow-cyan-950/40 transition-all duration-300 group-hover:scale-105">
+                <img 
+                  src="/logo.svg" 
+                  alt="Air Flow Official Logo" 
+                  className="h-8 sm:h-9 w-auto object-contain"
+                />
               </div>
             </a>
 

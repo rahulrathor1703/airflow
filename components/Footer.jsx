@@ -61,15 +61,12 @@ export function Footer({ onOpenBOQ, onOpenERP, onNavigateSection, onSelectCatego
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Column 1: Company Profile */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-600 to-blue-600 p-0.5">
-                <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                  <Wind className="w-5 h-5 text-cyan-400" />
-                </div>
-              </div>
-              <span className="font-heading font-black text-xl text-white tracking-tight">
-                AIR<span className="text-cyan-400">FLOW</span> <span className="text-xs font-normal text-slate-400">PVT LTD</span>
-              </span>
+            <div className="flex items-center bg-white/95 px-3 py-1.5 rounded-xl border border-slate-700 w-fit">
+              <img 
+                src="/logo.svg" 
+                alt="Air Flow Official Logo" 
+                className="h-9 w-auto object-contain"
+              />
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed pr-6">
